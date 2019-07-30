@@ -96,6 +96,15 @@ p {
             font-size: 2rem;
             padding: 0 1.5rem;
         }
+        a:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        a:active {
+            background: @main-font-color;
+        }
+
     }
 
     
@@ -317,17 +326,46 @@ p {
 }
 
 .sectionE {
-    height: 130vh;
+    height: 100vh;
     background-image: url("../images/volkswagon-min.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-contents: center;
+    align-items: center;
+    flex-direction: column;
+
+    form {
+
+    }
+
+    .form-field {
+        margin: 1rem 0;
+        color: white;
+
+        input {
+            color: white;
+            width: 100%;
+            background-color: rgba(255,186,122,.90);
+        }
+
+        textarea {
+            background-color: rgba(255,186,122,.90);
+        }
+    }
 }
 
 
 footer {
     background: white;
     display: flex;
-    height: 20vh;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+
+    p {
+        font-size: 1.5rem;
+    }
 }

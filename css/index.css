@@ -394,6 +394,13 @@ p {
   font-size: 2rem;
   padding: 0 1.5rem;
 }
+.sectionA nav a:hover {
+  color: white;
+  cursor: pointer;
+}
+.sectionA nav a:active {
+  background: #3C8C9E;
+}
 .sectionB {
   height: 200vh;
   width: 50%;
@@ -588,15 +595,36 @@ p {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .sectionE {
-  height: 130vh;
+  height: 100vh;
   background-image: url("../images/volkswagon-min.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-contents: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sectionE .form-field {
+  margin: 1rem 0;
+  color: white;
+}
+.sectionE .form-field input {
+  color: white;
+  width: 100%;
+  background-color: rgba(255, 186, 122, 0.9);
+}
+.sectionE .form-field textarea {
+  background-color: rgba(255, 186, 122, 0.9);
 }
 footer {
   background: white;
   display: flex;
-  height: 20vh;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+footer p {
+  font-size: 1.5rem;
 }
