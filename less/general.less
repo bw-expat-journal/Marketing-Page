@@ -4,16 +4,13 @@ body, html {
 }
 
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-body {
-
-}
 
 // FONT STYLING
 
-p, h1, h2, h3, h4, h5, h6, a, {
+p, h1, h2, h3, h4, h5, h6, a {
     font-family: @main-font;
 }
 
@@ -26,7 +23,8 @@ h1 {
     }
 
     @media @mobile {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        max-width: 45%;
     }
 }
 
@@ -53,10 +51,11 @@ p {
 
 // CONTENT & CONTAINERS
 
-.content {
-    width: 80%;
-    margin: 0 auto;
+main {
+    display: flex;
+    flex-direction: column;
 }
+
 
 .first-background {
     background-image: url("../images/journal.jpg");
@@ -69,32 +68,47 @@ p {
 }
 
 .sectionA {
-    margin: 0 0 3rem 0;
     width: 100%;
+    max-width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row-reverse;
     align-items: flex-end;
     border-bottom: 1px solid black;
     position: fixed;
+    background: #c9ced1;
 
     div {
         margin: 0 0;
+        width: 40%;
     }
 
     .navbar {
         width: 60%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media @mobile {
+            width: 60%;
+        }
     }
+
 
     nav {
         display: flex;
         justify-content: flex-end;
+        max-width: 60%;
 
         a {
             text-decoration: none;
             color: black;
             font-size: 2rem;
-            padding: 0 1.5rem;
+            padding: 0 2rem;
+
+            @media @mobile {
+                padding: 0 .5rem;
+                font-size: 1.5rem;
+            }
         }
         a:hover {
             color: white;
@@ -115,13 +129,21 @@ p {
 
 
 .sectionB {
-    height: 200vh;
     width: 50%;
     margin-left: 45%;
     display: flex;
     flex-direction: column;
     margin-top: 10rem;
     align-items: center;
+
+    @media @tablet {
+
+    }
+
+    @media @mobile {
+        width: 100%;
+        margin: 0 0;
+    }
 
     div {
         margin: .5rem;
@@ -137,10 +159,6 @@ p {
         width: 30vw;
     }
 
-    .p_carousel {
-        height: 30vh;
-        overflow: hidden;   //NEED TO FIX THIS LATER
-    }
 
     img {
         width: 100%;
@@ -282,7 +300,6 @@ p {
 }
 
 .sectionD {
-    height: 130vh;
     background-image: url("../images/airplane_window.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -291,21 +308,25 @@ p {
     display: flex;
     flex-direction: column;
 
+    h2 {
+        margin: 1rem 0;
+    }
+
     .center-card{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90vw;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0 auto 10rem auto;
         flex-flow: row wrap;
 
         .team-member {
-            width: 20vw;
+            width: 25%;
+            margin: 1.5rem 2.5rem;
             background: white;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
             border-radius: 15px;
-            margin: 10% 10% 0 0;
     
               .container {
                 padding: 2px 16px;
@@ -333,12 +354,17 @@ p {
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-contents: center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    form {
+    div {
+        max-width: 100%;
+    }
 
+    form {
+        @media @mobile {
+        }
     }
 
     .form-field {
@@ -353,13 +379,14 @@ p {
 
         textarea {
             background-color: rgba(255,186,122,.90);
+            max-width: 100%;
         }
     }
 }
 
 
 footer {
-    background: white;
+    background:#c9ced1;
     display: flex;
     align-items: center;
     justify-content: space-between;
