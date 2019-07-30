@@ -276,6 +276,12 @@ main {
     display: flex;
     justify-content: center;
 
+    @media @tablet {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
     @media @mobile {
         flex-direction: column-reverse;
         height: auto;
@@ -283,7 +289,7 @@ main {
 
 
     .indent {
-        height: 60rem;
+        height: auto;
         width: 40rem;
         border-radius: 2.5rem;
         background: @main-font-color;
@@ -292,6 +298,13 @@ main {
         justify-content: center;
         flex-direction: flex-end;
         align-items: center;
+
+        @media @tablet {
+            justify-content: space-between;
+            flex-direction: row;
+            width: 30%;
+            margin: .5rem;
+        }
 
         @media @mobile {
             height: auto;
@@ -314,6 +327,12 @@ main {
         font-style: @main-font;
         color: @second-font-color;
 
+        @media @tablet {
+            width: 65%;
+            margin: .5rem;
+            display: flex;
+            justify-content: space-between
+        }
 
         @media @mobile {
             display: flex;
@@ -327,6 +346,19 @@ main {
     p {
         font-size: 2rem;
         padding: 0 1.5rem;
+
+        @media @tablet {
+            width: 100%;
+            margin: .5rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    div {
+        @media @tablet {
+            width: 50%;
+            margin: .5rem;
+        }
     }
 }
 
@@ -382,6 +414,7 @@ main {
 }
 
 .sectionE {
+    color: white;
     height: auto;
     background-image: url("../images/volkswagon-min.jpg");
     background-repeat: no-repeat;
@@ -407,6 +440,9 @@ main {
         align-items: center;
 
         div {
+            @media @tablet {
+                width: 90%;
+            }
             @media @mobile {
                 width: 90%;
             }
