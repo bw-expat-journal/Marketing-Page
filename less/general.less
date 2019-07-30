@@ -18,8 +18,16 @@ p, h1, h2, h3, h4, h5, h6, a, {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 6rem;
     margin: 5% 0 0 0;
+
+    @media @tablet {
+        font-size: 4rem;
+    }
+
+    @media @mobile {
+        font-size: 2.5rem;
+    }
 }
 
 h2, h3 {
@@ -27,7 +35,15 @@ h2, h3 {
 }
 
 p {
-    font-size: 2rem;
+    font-size: 2.8rem;
+
+    @media @tablet {
+        font-size: 2.2rem;
+    }
+
+    @media @mobile {
+        font-size: 1.6rem;
+    }
 }
 
 .hand-written {
@@ -48,15 +64,19 @@ p {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .sectionA {
     margin: 0 0 3rem 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: flex-end;
-    border-bottom: 1px solid @side-background;
+    border-bottom: 1px solid black;
+    position: fixed;
 
     div {
         margin: 0 0;
@@ -91,6 +111,7 @@ p {
     margin-left: 45%;
     display: flex;
     flex-direction: column;
+    margin-top: 10rem;
     align-items: center;
 
     div {
@@ -103,13 +124,18 @@ p {
 
     .polaroid {
         background-color: white;
-        height: 45vh;
-        width: 45vh;
+        max-width: 50vw;
+        width: 30vw;
     }
 
     .p_carousel {
         height: 30vh;
         overflow: hidden;   //NEED TO FIX THIS LATER
+    }
+
+    img {
+        width: 100%;
+        max-width: 40vw;
     }
 
     /* Slideshow container */
@@ -215,6 +241,35 @@ p {
     width: 100%;
     height: 900px;
     background: @side-background;
+    display: flex;
+
+    .indent {
+        height: 60rem;
+        width: 40rem;
+        border-radius: 2.5rem;
+        background: @main-font-color;
+        margin: 10% 10% 0 0%;
+        display: flex;
+        justify-content: center;
+        flex-direction: flex-end;
+        align-items: center;
+    }
+    img {
+        width: 80%;
+        max-width: 40vw;
+    }
+
+    .text-container {
+        height: 60rem;
+        width: 50rem;
+        margin: 10% 20rem 0 10%;
+        font-style: @main-font;
+        color: @second-font-color;
+    }
+
+    p {
+        font-size: 2rem;
+    }
 }
 
 .sectionD {
@@ -228,7 +283,7 @@ p {
 
 .sectionE {
     height: 130vh;
-    background-image: url("../images/volkswagon.jpg");
+    background-image: url("../images/volkswagon-min.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

@@ -322,15 +322,35 @@ a {
   font-family: 'Lora', serif;
 }
 h1 {
-  font-size: 4.5rem;
+  font-size: 6rem;
   margin: 5% 0 0 0;
+}
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 h2,
 h3 {
   font-size: 2rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 2.8rem;
+}
+@media only screen and (max-width: 1000px) {
+  p {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  p {
+    font-size: 1.6rem;
+  }
 }
 .hand-written {
   font-family: 'Handlee', cursive;
@@ -345,14 +365,18 @@ p {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 .sectionA {
   margin: 0 0 3rem 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: flex-end;
-  border-bottom: 1px solid #374D52;
+  border-bottom: 1px solid black;
+  position: fixed;
 }
 .sectionA div {
   margin: 0 0;
@@ -376,6 +400,7 @@ p {
   margin-left: 45%;
   display: flex;
   flex-direction: column;
+  margin-top: 10rem;
   align-items: center;
   /* Slideshow container */
   /* Hide the images by default */
@@ -420,12 +445,16 @@ p {
 }
 .sectionB .polaroid {
   background-color: white;
-  height: 45vh;
-  width: 45vh;
+  max-width: 50vw;
+  width: 30vw;
 }
 .sectionB .p_carousel {
   height: 30vh;
   overflow: hidden;
+}
+.sectionB img {
+  width: 100%;
+  max-width: 40vw;
 }
 .sectionB .slideshow-container {
   max-width: 1100px;
@@ -494,6 +523,32 @@ p {
   width: 100%;
   height: 900px;
   background: #374D52;
+  display: flex;
+}
+.sectionC .indent {
+  height: 60rem;
+  width: 40rem;
+  border-radius: 2.5rem;
+  background: #3C8C9E;
+  margin: 10% 10% 0 0%;
+  display: flex;
+  justify-content: center;
+  flex-direction: flex-end;
+  align-items: center;
+}
+.sectionC img {
+  width: 80%;
+  max-width: 40vw;
+}
+.sectionC .text-container {
+  height: 60rem;
+  width: 50rem;
+  margin: 10% 20rem 0 10%;
+  font-style: 'Lora', serif;
+  color: #C9E5EB;
+}
+.sectionC p {
+  font-size: 2rem;
 }
 .sectionD {
   height: 130vh;
@@ -505,7 +560,7 @@ p {
 }
 .sectionE {
   height: 130vh;
-  background-image: url("../images/volkswagon.jpg");
+  background-image: url("../images/volkswagon-min.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
