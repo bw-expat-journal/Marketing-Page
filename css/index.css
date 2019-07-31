@@ -353,7 +353,7 @@ h4 {
   }
 }
 p {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 @media only screen and (max-width: 1000px) {
   p {
@@ -373,7 +373,7 @@ main {
   flex-direction: column;
 }
 .first-background {
-  background-image: url("../images/journal.jpg");
+  background-image: url("../images/journal-compressed.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -493,7 +493,7 @@ main {
   }
 }
 .sectionB {
-  margin-top: 20rem;
+  margin-top: 12rem;
   margin-left: 45%;
   display: block;
   flex-direction: column;
@@ -630,67 +630,45 @@ main {
     opacity: 1;
   }
 }
-.sectionC {
-  width: 100%;
-  height: auto;
+.sectionC h2 {
+  background: #374D52;
+  color: white;
+  margin: 0;
+  border: none;
+  padding: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .sectionC h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.sectionC .C-content {
   background: #374D52;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 @media only screen and (max-width: 1000px) {
-  .sectionC h2 {
+  .sectionC .C-content h2 {
     font-size: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {
-  .sectionC {
+  .sectionC .C-content {
     flex-direction: column-reverse;
     height: auto;
   }
 }
-.sectionC .indent {
-  height: auto;
-  width: 40rem;
-  border-radius: 2.5rem;
-  background: #3C8C9E;
-  margin: 10% 10% 0 0%;
-  display: flex;
-  justify-content: center;
-  flex-direction: flex-end;
-  align-items: center;
-}
-@media only screen and (max-width: 1000px) {
-  .sectionC .indent {
-    justify-content: space-between;
-    flex-direction: row;
-    width: 30%;
-    margin: 0.5rem;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .sectionC .indent {
-    height: auto;
-  }
-}
-.sectionC img {
-  width: 80%;
-  max-width: 40vw;
-}
-@media only screen and (max-width: 500px) {
-  .sectionC img {
-    margin: 2.5rem;
-    width: auto;
-  }
-}
-.sectionC .text-container {
+.sectionC .C-content .text-container {
   height: auto;
   width: 50rem;
-  margin: 10% 20rem 0 10%;
   font-style: 'Lora', serif;
   color: #C9E5EB;
+  margin: 1rem 4rem;
 }
 @media only screen and (max-width: 1000px) {
-  .sectionC .text-container {
+  .sectionC .C-content .text-container {
     width: 65%;
     margin: 0.5rem;
     display: flex;
@@ -698,7 +676,7 @@ main {
   }
 }
 @media only screen and (max-width: 500px) {
-  .sectionC .text-container {
+  .sectionC .C-content .text-container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -706,25 +684,60 @@ main {
     height: auto;
   }
 }
-.sectionC p {
+.sectionC .C-content .indent {
+  height: 100%;
+  width: 35%;
+  border-radius: 2.5rem;
+  background: #3C8C9E;
+  display: flex;
+  justify-content: center;
+  flex-direction: flex-end;
+  align-items: center;
+  margin: 1rem 4rem;
+}
+@media only screen and (max-width: 1000px) {
+  .sectionC .C-content .indent {
+    height: 20%;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sectionC .C-content .indent {
+    height: auto;
+  }
+}
+.sectionC .C-content img {
+  width: 80%;
+  max-width: 40vw;
+  padding: 2rem 0;
+}
+@media only screen and (max-width: 1000px) {
+  .sectionC .C-content img {
+    padding: 1.5rem 0;
+    margin: 2rem 0;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sectionC .C-content img {
+    margin: 2.5rem;
+    width: 90%;
+  }
+}
+.sectionC .C-content p {
   font-size: 2rem;
   padding: 0 1.5rem;
 }
 @media only screen and (max-width: 1000px) {
-  .sectionC p {
+  .sectionC .C-content p {
     width: 100%;
     margin: 0.5rem;
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 1000px) {
-  .sectionC div {
-    width: 50%;
-    margin: 0.5rem;
-  }
-}
 .sectionD {
-  background-image: url("../images/airplane_window.jpg");
+  background-image: url("../images/airplane_window_compressed.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -734,6 +747,8 @@ main {
 }
 .sectionD h2 {
   margin: 1rem 0;
+  display: flex;
+  justify-content: center;
 }
 .sectionD .center-card {
   display: flex;
@@ -762,7 +777,19 @@ main {
 .sectionD .center-card .team-member img {
   border-radius: 15px;
   width: 100%;
-  max-width: 100%;
+}
+.sectionD .center-card .team-member p {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 1000px) {
+  .sectionD .center-card .team-member p {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sectionD .center-card .team-member p {
+    font-size: 1.1rem;
+  }
 }
 .sectionD .center-card .team-member:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
