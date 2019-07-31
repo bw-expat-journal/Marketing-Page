@@ -307,6 +307,9 @@ body,
 html {
   height: 100%;
   font-size: 62.5%;
+  line-height: 1.5;
+  width: 100%;
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -383,39 +386,27 @@ main {
 }
 .sectionA {
   width: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: flex-end;
   flex-direction: row-reverse;
+  justify-content: space-between;
+  display: flex;
   align-items: flex-end;
   border-bottom: 1px solid black;
   position: fixed;
   background: #c9ced1;
   z-index: 1;
-  margin-bottom: 135px;
   height: 10rem;
 }
 @media only screen and (max-width: 500px) {
   .sectionA {
     flex-direction: column-reverse;
+    max-width: 500px;
     justify-content: center;
-  }
-}
-.sectionA div {
-  margin: 0 0;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  width: 40%;
-}
-@media only screen and (max-width: 500px) {
-  .sectionA div {
-    width: 100%;
+    align-items: center;
   }
 }
 .sectionA .header {
   text-align: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 @media only screen and (max-width: 500px) {
   .sectionA .header {
@@ -435,6 +426,7 @@ main {
 }
 .sectionA nav {
   display: flex;
+  flex-flow: row wrap;
   justify-content: flex-end;
 }
 @media only screen and (max-width: 500px) {
@@ -448,17 +440,18 @@ main {
   text-decoration: none;
   color: black;
   font-size: 2rem;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
 }
 @media only screen and (max-width: 500px) {
   .sectionA nav a {
     padding: 1rem;
     font-size: 1.5rem;
+    width: 20%;
   }
 }
 @media only screen and (max-width: 500px) {
   .sectionA nav a:last-child {
-    width: 45%;
+    width: 20%;
     padding: 0;
     margin: 0;
   }
@@ -708,7 +701,7 @@ main {
   }
 }
 .sectionC .C-content img {
-  width: 80%;
+  width: 90%;
   max-width: 40vw;
   padding: 2rem 0;
 }
@@ -819,16 +812,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  https: width: 100%;
+}
+.sectionE form div {
+  width: 80%;
 }
 @media only screen and (max-width: 1000px) {
   .sectionE form div {
-    width: 90%;
+    width: 80%;
   }
 }
 @media only screen and (max-width: 500px) {
   .sectionE form div {
-    width: 90%;
+    width: 80%;
   }
 }
 .sectionE .form-field {
@@ -841,11 +837,11 @@ main {
 .sectionE .form-field input {
   color: white;
   width: 100%;
-  background-color: rgba(255, 186, 122, 0.9);
+  background-color: #ffba7a;
 }
 .sectionE .form-field textarea {
-  background-color: rgba(255, 186, 122, 0.9);
-  max-width: 70%;
+  background-color: #ffba7a;
+  max-width: 90%;
 }
 @media only screen and (max-width: 1000px) {
   .sectionE .form-field textarea {

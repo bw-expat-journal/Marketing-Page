@@ -1,6 +1,9 @@
 body, html {
     height: 100%;
     font-size: 62.5%;
+    line-height: 1.5;
+    width: 100%;
+    overflow-x: hidden; 
 }
 
 * {
@@ -84,50 +87,47 @@ main {
 
 .sectionA {
     width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: flex-end;
     flex-direction: row-reverse;
+    justify-content: space-between;
+    display: flex;
     align-items: flex-end;
     border-bottom: 1px solid black;
     position: fixed;
     background: #c9ced1;
     z-index: 1;
-    margin-bottom: 135px;
     height: 10rem;
 
     @media @mobile {
         flex-direction: column-reverse;
+        max-width: 500px;
         justify-content: center;
+        align-items: center;
     }
 
-    div {
-        margin: 0 0;
-        padding: .5rem;
-        display: flex;
-        justify-content: center;
-        width: 40%;
+//    div {
+//        margin: 0 0;
+//        display: flex;
+//         justify-content: center;
+//         width: 100%;
 
-        @media @mobile {
-            width: 100%;
-        }
-    }
+//         @media @mobile {
+//             width: 100%;
+//         }
+//     }
 
     .header {
         text-align: center;
-        justify-content: flex-start;
-
+        justify-content: center;
         @media @mobile {
             justify-content: center;
         }
     }
     .navbar {
-        width: 60%;
+       width: 60%;
         display: flex;
         justify-content: flex-end;
-
         @media @mobile {
-            width: 100%;
+           width: 100%;
             justify-content: center;
         }
     }
@@ -135,10 +135,10 @@ main {
 
     nav {
         display: flex;
+        flex-flow: row wrap;
         justify-content: flex-end;
-
         @media @mobile {
-            width: 100%;
+           width: 100%;
             justify-content: center;
             align-items: center;
         }
@@ -147,18 +147,18 @@ main {
             text-decoration: none;
             color: black;
             font-size: 2rem;
-            padding: 0 2rem;
-
+            padding: 0 .5rem;
             @media @mobile {
-                padding: 1rem;
-                font-size: 1.5rem;
+               padding: 1rem;
+               font-size: 1.5rem;
+               width: 20%;
             }
         }
         a:last-child {
             @media @mobile {
-                width: 45%;
+               width: 20%;
                 padding: 0;
-                margin: 0;
+               margin: 0;
             }
         }
         a:hover {
@@ -183,7 +183,7 @@ main {
     padding-right: 8rem;
 
     @media @mobile {
-        margin-top: 15rem;
+       margin-top: 15rem;
         padding-right: 0;
     }
 }
@@ -197,8 +197,8 @@ main {
 }
 
 .sectionB {
-    margin-top: 12rem;
-    margin-left: 45%;
+   margin-top: 12rem;
+   margin-left: 45%;
     display: block;
     flex-direction: column;
     align-items: center;
@@ -209,7 +209,7 @@ main {
 
     @media @mobile {
         width: 100%;
-        margin: 10rem 0;
+       margin: 10rem 0;
     }
 
     .feature {
@@ -217,7 +217,7 @@ main {
     }
 
     div {
-        margin: .5rem;
+       margin: .5rem;
     }
 
     p {
@@ -249,7 +249,7 @@ main {
     width: 90%;
     height: 70%;
     position: relative;
-    margin: 0 auto 17.5% auto;
+   margin: 0 auto 17.5% auto;
   }
   
   /* Hide the images by default */
@@ -263,7 +263,7 @@ main {
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+   margin-top: -22px;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -326,7 +326,7 @@ main {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-    margin-top: 10%;
+   margin-top: 10%;
   }
   
   @-webkit-keyframes fade {
@@ -347,7 +347,7 @@ main {
         color: white;
         margin: 0;
         border: none;
-        padding: 2rem;
+       padding: 2rem;
 
         @media @mobile {
             display: flex;
@@ -362,7 +362,7 @@ main {
     
         @media @tablet {
             h2 {
-                font-size: 2rem;
+               font-size: 2rem;
             }
         }
     
@@ -376,11 +376,11 @@ main {
             width: 50rem;
             font-style: @main-font;
             color: @second-font-color;
-            margin: 1rem 4rem;
+           margin: 1rem 4rem;
     
             @media @tablet {
                 width: 65%;
-                margin: .5rem;
+               margin: .5rem;
                 display: flex;
                 justify-content: space-between
             }
@@ -389,7 +389,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                margin: .5rem 0;
+               margin: .5rem 0;
                 height: auto;
             }
         }
@@ -403,7 +403,7 @@ main {
             justify-content: center;
             flex-direction: flex-end;
             align-items: center;
-            margin: 1rem 4rem;
+           margin: 1rem 4rem;
     
             @media @tablet {
                 height: 20%;
@@ -416,25 +416,25 @@ main {
             }
         }
         img {
-            width: 80%;
+            width: 90%;
             max-width: 40vw;
-            padding: 2rem 0;
+           padding: 2rem 0;
     
             @media @tablet {
-                padding: 1.5rem 0;
-                margin: 2rem 0;
+               padding: 1.5rem 0;
+               margin: 2rem 0;
                 width: 90%;
             }
 
             @media @mobile {
-                margin: 2.5rem;
+               margin: 2.5rem;
                 width: 90%;
             }
         }
-    
+
         p {
             font-size: 2rem;
-            padding: 0 1.5rem;
+           padding: 0 1.5rem;
     
             @media @tablet {
                 width: 100%;
@@ -462,7 +462,7 @@ main {
     flex-direction: column;
 
     h2 {
-        margin: 1rem 0;
+       margin: 1rem 0;
         display: flex;
         justify-content: center;
     }
@@ -472,12 +472,12 @@ main {
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin: 0 auto 10rem auto;
+       margin: 0 auto 10rem auto;
         flex-flow: row wrap;
 
         .team-member {
             width: 25%;
-            margin: 1.5rem 2.5rem;
+           margin: 1.5rem 2.5rem;
             background: white;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
@@ -543,21 +543,22 @@ main {
     form {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;https://expatjournal.netlify.com/login
         width: 100%;
 
         div {
+            width: 80%;
             @media @tablet {
-                width: 90%;
+                width: 80%;
             }
             @media @mobile {
-                width: 90%;
+                width: 80%;
             }
         }
     }
 
     .form-field {
-        margin: 1rem 0;
+       margin: 1rem 0;
         color: white;
         font-size: 2rem;
         display: flex;
@@ -566,12 +567,12 @@ main {
         input {
             color: white;
             width: 100%;
-            background-color: rgba(255,186,122,.90);
+            background-color: rgb(255,186,122);
         }
 
         textarea {
-            background-color: rgba(255,186,122,.90);
-            max-width: 70%;
+            background-color: rgb(255,186,122);
+            max-width: 90%;
 
             @media @tablet {
                 max-width: 100%;
@@ -583,14 +584,14 @@ main {
         height: 4rem;
         width: 40%;
         border-radius: 10rem;
-        margin: 1.5rem;
+       margin: 1.5rem;
         font-size: 2.5rem;
 
         @media @mobile {
             height: 3rem;
             width: 40%;
             border-radius: 10rem;
-            margin: 1.5rem;
+           margin: 1.5rem;
         }
     }
 }
@@ -617,15 +618,15 @@ footer {
         align-items: center;
         img {
             width: 4rem;
-            margin: 0 1rem;
+           margin: 0 1rem;
         }
     }
     .attribution {
         justify-content: flex-start;
-        margin-left: 1rem;
+       margin-left: 1rem;
     }
     .favicons {
         justify-content: flex-end;
-        margin-right: 1rem;
+       margin-right: 1rem;
     }
 }
