@@ -96,17 +96,30 @@ main {
     margin-bottom: 135px;
     height: 10rem;
 
+    @media @mobile {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
     div {
         margin: 0 0;
         padding: .5rem;
         display: flex;
         justify-content: center;
         width: 40%;
+
+        @media @mobile {
+            width: 100%;
+        }
     }
 
     .header {
         text-align: center;
         justify-content: flex-start;
+
+        @media @mobile {
+            justify-content: center;
+        }
     }
     .navbar {
         width: 60%;
@@ -114,7 +127,8 @@ main {
         justify-content: flex-end;
 
         @media @mobile {
-            width: 60%;
+            width: 100%;
+            justify-content: center;
         }
     }
 
@@ -123,6 +137,12 @@ main {
         display: flex;
         justify-content: flex-end;
 
+        @media @mobile {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
         a {
             text-decoration: none;
             color: black;
@@ -130,8 +150,15 @@ main {
             padding: 0 2rem;
 
             @media @mobile {
-                padding: 0 .5rem;
+                padding: 1rem;
                 font-size: 1.5rem;
+            }
+        }
+        a:last-child {
+            @media @mobile {
+                width: 45%;
+                padding: 0;
+                margin: 0;
             }
         }
         a:hover {
@@ -151,7 +178,22 @@ main {
 .B-content {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    padding-right: 8rem;
+
+    @media @mobile {
+        margin-top: 15rem;
+        padding-right: 0;
+    }
+}
+
+.trip-header {
+    font-family: @hand-writing;
+    font-style: italic;
+    @media @mobile {
+        font-size: 2rem;
+    }
 }
 
 .sectionB {
@@ -167,7 +209,7 @@ main {
 
     @media @mobile {
         width: 100%;
-        margin: 0 0;
+        margin: 10rem 0;
     }
 
     .feature {
@@ -185,12 +227,15 @@ main {
     .polaroid {
         background-color: white;
         max-width: 50vw;
-        width: 30vw;
+        width: 35vw;
+        @media @mobile {
+            width: 80%;
+        }
     }
 
 
-    img {
-        width: 100%;
+    .img-2 {
+        width: 80%;
         max-width: 40vw;
 
         @media @mobile {
@@ -201,10 +246,10 @@ main {
     /* Slideshow container */
 .slideshow-container {
     max-width: 1100px;
-    width: 95%;
+    width: 90%;
     height: 70%;
     position: relative;
-    margin: auto;
+    margin: 0 auto 17.5% auto;
   }
   
   /* Hide the images by default */
@@ -450,7 +495,7 @@ main {
 .sectionE {
     color: white;
     height: auto;
-    background-image: url("../images/volkswagon-min.jpg");
+    background-image: url("../images/volkswagon-compressed.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

@@ -395,6 +395,12 @@ main {
   margin-bottom: 135px;
   height: 10rem;
 }
+@media only screen and (max-width: 500px) {
+  .sectionA {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
 .sectionA div {
   margin: 0 0;
   padding: 0.5rem;
@@ -402,9 +408,19 @@ main {
   justify-content: center;
   width: 40%;
 }
+@media only screen and (max-width: 500px) {
+  .sectionA div {
+    width: 100%;
+  }
+}
 .sectionA .header {
   text-align: center;
   justify-content: flex-start;
+}
+@media only screen and (max-width: 500px) {
+  .sectionA .header {
+    justify-content: center;
+  }
 }
 .sectionA .navbar {
   width: 60%;
@@ -413,12 +429,20 @@ main {
 }
 @media only screen and (max-width: 500px) {
   .sectionA .navbar {
-    width: 60%;
+    width: 100%;
+    justify-content: center;
   }
 }
 .sectionA nav {
   display: flex;
   justify-content: flex-end;
+}
+@media only screen and (max-width: 500px) {
+  .sectionA nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .sectionA nav a {
   text-decoration: none;
@@ -428,8 +452,15 @@ main {
 }
 @media only screen and (max-width: 500px) {
   .sectionA nav a {
-    padding: 0 0.5rem;
+    padding: 1rem;
     font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sectionA nav a:last-child {
+    width: 45%;
+    padding: 0;
+    margin: 0;
   }
 }
 .sectionA nav a:hover {
@@ -442,7 +473,24 @@ main {
 .B-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  padding-right: 8rem;
+}
+@media only screen and (max-width: 500px) {
+  .B-content {
+    margin-top: 15rem;
+    padding-right: 0;
+  }
+}
+.trip-header {
+  font-family: 'Handlee', cursive;
+  font-style: italic;
+}
+@media only screen and (max-width: 500px) {
+  .trip-header {
+    font-size: 2rem;
+  }
 }
 .sectionB {
   margin-top: 20rem;
@@ -488,7 +536,7 @@ main {
 @media only screen and (max-width: 500px) {
   .sectionB {
     width: 100%;
-    margin: 0 0;
+    margin: 10rem 0;
   }
 }
 .sectionB .feature {
@@ -503,23 +551,28 @@ main {
 .sectionB .polaroid {
   background-color: white;
   max-width: 50vw;
-  width: 30vw;
+  width: 35vw;
 }
-.sectionB img {
-  width: 100%;
+@media only screen and (max-width: 500px) {
+  .sectionB .polaroid {
+    width: 80%;
+  }
+}
+.sectionB .img-2 {
+  width: 80%;
   max-width: 40vw;
 }
 @media only screen and (max-width: 500px) {
-  .sectionB img {
+  .sectionB .img-2 {
     max-width: 90%;
   }
 }
 .sectionB .slideshow-container {
   max-width: 1100px;
-  width: 95%;
+  width: 90%;
   height: 70%;
   position: relative;
-  margin: auto;
+  margin: 0 auto 17.5% auto;
 }
 .sectionB .mySlides {
   display: none;
@@ -717,7 +770,7 @@ main {
 .sectionE {
   color: white;
   height: auto;
-  background-image: url("../images/volkswagon-min.jpg");
+  background-image: url("../images/volkswagon-compressed.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
