@@ -463,34 +463,25 @@ main {
 .sectionA nav a:active {
   background: #3C8C9E;
 }
-.B-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-right: 8rem;
-}
-@media only screen and (max-width: 500px) {
-  .B-content {
-    margin-top: 15rem;
-    padding-right: 0;
-  }
-}
-.trip-header {
-  font-family: 'Handlee', cursive;
-  font-style: italic;
-}
-@media only screen and (max-width: 500px) {
-  .trip-header {
-    font-size: 2rem;
-  }
-}
 .sectionB {
   margin-top: 12rem;
   margin-left: 45%;
   display: block;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (max-width: 500px) {
+  .sectionB {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+.sectionB .B-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 8rem;
   /* Slideshow container */
   /* Hide the images by default */
   /* Next & previous buttons */
@@ -498,80 +489,86 @@ main {
   /* On hover, add a black background color with a little bit see-through */
   /* Caption text */
   /*
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }   */
+       .text {
+         color: #f2f2f2;
+         font-size: 15px;
+         padding: 8px 12px;
+         position: absolute;
+         bottom: 8px;
+         width: 100%;
+         text-align: center;
+       }   */
   /* Number text (1/3 etc) */
   /* The dots/bullets/indicators */
   /*
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }  */
+       .dot {
+         cursor: pointer;
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+       }
+       
+       .active, .dot:hover {
+         background-color: #717171;
+       }  */
   /* Fading animation */
 }
 @media only screen and (max-width: 500px) {
-  .sectionB {
-    width: 100%;
-    margin: 10rem 0;
+  .sectionB .B-content {
+    margin-top: 15rem;
+    padding-right: 0;
   }
 }
-.sectionB .feature {
-  color: #C9E5EB;
+.sectionB .B-content .trip-header {
+  font-family: 'Handlee', cursive;
+  font-style: italic;
 }
-.sectionB div {
+@media only screen and (max-width: 500px) {
+  .sectionB .B-content .trip-header {
+    font-size: 2rem;
+  }
+}
+.sectionB .B-content div {
   margin: 0.5rem;
 }
-.sectionB p {
+.sectionB .B-content p {
   font-family: 'Handlee', cursive;
 }
-.sectionB .polaroid {
+.sectionB .B-content .polaroid {
   background-color: white;
   max-width: 50vw;
   width: 35vw;
 }
 @media only screen and (max-width: 500px) {
-  .sectionB .polaroid {
+  .sectionB .B-content .polaroid {
     width: 80%;
   }
 }
-.sectionB .img-2 {
+.sectionB .B-content .img-2 {
   width: 80%;
   max-width: 40vw;
 }
 @media only screen and (max-width: 500px) {
-  .sectionB .img-2 {
+  .sectionB .B-content .img-2 {
     max-width: 90%;
   }
 }
-.sectionB .slideshow-container {
+.sectionB .B-content .slideshow-container {
   max-width: 1100px;
   width: 90%;
   height: 70%;
   position: relative;
   margin: 0 auto 17.5% auto;
 }
-.sectionB .mySlides {
+.sectionB .B-content .mySlides {
   display: none;
 }
-.sectionB .prev,
-.sectionB .next {
+.sectionB .B-content .prev,
+.sectionB .B-content .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -585,22 +582,22 @@ main {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-.sectionB .next {
+.sectionB .B-content .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.sectionB .prev:hover,
-.sectionB .next:hover {
+.sectionB .B-content .prev:hover,
+.sectionB .B-content .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.sectionB .numbertext {
+.sectionB .B-content .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
-.sectionB .fade {
+.sectionB .B-content .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -622,6 +619,9 @@ main {
   to {
     opacity: 1;
   }
+}
+.sectionC .feature {
+  color: #C9E5EB;
 }
 .sectionC h2 {
   background: #374D52;
