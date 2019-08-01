@@ -25,14 +25,14 @@
                     <a href="https://expatjournal.netlify.com/login">Log In</a>
                 </nav>
             </div>
-            <div class="header">
+            <div class="header rubberBand animated">
                 <h1>Expat Journal</h1>
             </div>
             </section>
 
             <section class="sectionB">
                 <div class="B-content">
-                    <h2 class="trip-header">Day 3: Hiking the Appalachians</h2>
+                    <h2 class="trip-header fadeInRight animated">Day 3: Hiking the Appalachians</h2>
                     <div class="polaroid">
                                 <!-- Slideshow container -->
                         <div class="slideshow-container">
@@ -117,14 +117,14 @@
         <div>
             <h2 id="about">About Us</h2>
             <div class="center-card">
-                <div class="team-member">
+                <div onscroll="startAnimate()" id="Left" class="team-member fadeInLeft animated">
                         <img src="images/yusuf.png" alt="Avatar">
                         <div class="container">
                         <h4><b>Yusuf Abdulkarim</b></h4> 
                         <h4>Web Back-End Engineer</h4> 
                         </div>
                 </div>
-                <div class="team-member">
+                <div class="team-member fadeInDown animated">
                         <img src="images/kenya.jpg" alt="Avatar">
                         <div class="container">
                         <h4><b>Kenya Alston</b></h4> 
@@ -132,28 +132,28 @@
                        <!-- <p>A Full Stack Web Developer based in Chicago, IL.</p>  -->
                         </div>
                 </div>
-                <div class="team-member">
+                <div class="team-member fadeInRight animated">
                         <img src="images/michael.png" alt="Avatar">
                         <div class="container">
                         <h4><b>Michael Chrupcala</b></h4> 
                         <h4>Web User-Interface Engineer</h4> 
                         </div>
                 </div>
-                <div class="team-member">
+                <div class="team-member fadeInLeft animated">
                         <img src="images/rosa.png" alt="Avatar">
                         <div class="container">
                         <h4><b>Rosa Perez</b></h4> 
                         <h4>Web Front-End Engineer</h4> 
                         </div>
                 </div>
-                <div class="team-member">
+                <div class="team-member fadeInUp animated">
                         <img src="images/blake.png" alt="Avatar">
                         <div class="container">
                         <h4><b>Blake Prouty</b></h4> 
                         <h4>Web Front-End Engineer</h4> 
                         </div>
                 </div>
-                <div class="team-member">
+                <div class="team-member fadeInRight animated">
                         <img src="images/heorhii.png" alt="Avatar">
                         <div class="container">
                         <h4><b>Heorhii Siburov</b></h4> 
@@ -238,7 +238,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }</script>
-
 
 </body>
 
