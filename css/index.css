@@ -3799,7 +3799,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   margin: 0 auto 10rem auto;
   flex-flow: row wrap;
 }
@@ -3810,6 +3810,11 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 15px;
+}
+@media only screen and (max-width: 1000px) {
+  .sectionD .center-card .team-member {
+    width: 38%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .sectionD .center-card .team-member {
