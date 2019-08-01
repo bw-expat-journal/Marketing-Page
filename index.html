@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <title>Expat Journal</title>
+
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
 
@@ -15,104 +16,224 @@
     <container class="content">
     <main>
         <section class="first-background">
-        <section class="sectionA">
-        <div class="navbar">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href-"#"> Log In</a>
-            </nav>
-        </div>
-        <div>
-            <h1>Expat Journal</h1>
-        </div>
+
+<!--HEADER & NAVBAR-->
+            <section class="sectionA">
+            <div class="navbar">
+                <nav> 
+                    <a href="index.html">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://expatjournal.netlify.com/sign-up">Sign Up</a>
+                    <a href="https://expatjournal.netlify.com/">Log In</a>
+                </nav>
+            </div>
+            <div class="header rubberBand animated">
+                <h1>Expat Journal</h1>
+            </div>
+            </section>
+
+<!--POLAROID PICTURE CAROUSEL-->
+            <section class="sectionB">
+                <div class="B-content">
+                    <h2 class="trip-header fadeInRight animated">Day 3: Hiking the Appalachians</h2>
+                    <div class="polaroid">
+                            <!-- Slideshow container -->
+                        <div class="slideshow-container">
+
+                            <!-- Full-width images with number and caption text -->
+                            <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/balloon.jpg" style="width:100%">
+                        <!---- <div class="text">Caption Text</div> -->
+                            </div>
+                        
+                            <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="images/lake.jpg" style="width:100%">
+                            <!---<div class="text">Caption Two</div> -->
+                            </div>
+                        
+                            <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="images/italy.jpg" style="width:100%">
+                            <!-- <div class="text">Caption Three</div> -->
+                            </div>
+                        
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                    </div>
+
+<!--SNAPSHOT OF USER'S JOURNAL ENTRY-->
+                    <div class="p_carousel">
+                    <p class="hand-written">The historic Appalachian trail is the world's longest continuously-marked trail. It starts in Maine and then winds down through fourteen states, and officially ends in Georgia. Though it's meant to be walked, a hike from end to end can take between five and seven months-- and only 20% of those who set out to conquer it actually complete the journey.</p>
+                    </div>
+
+                    <div>
+                    <p>People prepare for months to actually hike the entire length of the trail, which has been around since the 1920s, and is a permanent part of America's hiking heritage. But, it's also pretty fun to drive the Trail, which is divided into three major sections: New England, Mid-Atlantic, and the Southern Appalachians. The New England stretch of the trail takes you from Maine to New Hampshire, though a bit of Vermont, and into Connecticut. The Mid-Atlantic states include New York, Pennsylvania, Delaware and Maryland. Then you'll hit the Southern Appalachians, which include Virginia and West Virginia, then over to Tennessee and down to North Carolina and Georgia.</p>
+                    </div>
+
+                    <br><br>
+
+                    <img class="img-2" src="images/german_dock.jpg" alt="Man sitting on the dock, jutting across a lake in Germany.">
+                    
+                    <br>
+
+                    <div>
+
+                    <p>Beginning in the New England section of the Appalachian Trail, a few breathtaking highlights include Baxter State Park and the White Mountain National Forest. The trail picks up again in eastern Vermont and goes up to the New York-Connecticut border: this section of the trail is much less difficult for hikers than the northernmost segment. </p>
+                    <p>Expect to see many stone walls from previously existing structures such as farm buildings. This section also contains some hiking through gorgeous farmland and lovely pastoral views. Consider resting your legs at the waterfalls in Gifford Woods State Forest Park or Kent Falls State Park. Maine's Grafton Notch State Park is a major highlight of this section, and actually the perfect place to start your Appalachian Trail road trip, surrounded by beautiful waterfalls and gorges.</p>
+                    <h4>(Credit: <a href="https://maps.roadtrippers.com/trips/10304662">Road Trippers)</a></h4>
+                    </div>
+                </div>
+            </section>
         </section>
 
-        <section class="sectionB">
-        <div class="polaroid">
-                    <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/balloon.jpg" style="width:100%">
-               <!---- <div class="text">Caption Text</div> -->
-                </div>
-            
-                <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="images/lake.jpg" style="width:100%">
-                <!---<div class="text">Caption Two</div> -->
-                </div>
-            
-                <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="images/italy.jpg" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-                </div>
-            
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-            </div>
-
-
-            <div class="p_carousel">
-            <p class="hand-written">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illum maiores doloribus deserunt quam tempora asperiores natus earum possimus repellendus. Nihil commodi veniam architecto cupiditate magni? Sequi vitae molestiae tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ea odit accusamus, harum cupiditate facere reiciendis error velit rem dolore laboriosam neque voluptate, pariatur eligendi, minus debitis aut aliquid! Doloremque.</p>
-            </div>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iusto corrupti pariatur beatae, sit rerum nemo, eius officiis repellendus cupiditate iure assumenda doloremque facere cumque eveniet optio voluptas, deleniti consectetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae consequuntur tempore adipisci ea cumque fuga blanditiis laboriosam ratione, dolorum deserunt commodi omnis voluptatem sequi perferendis nam hic, facilis molestias.</p>
-            <br><br>
-            <img src="images/german_dock.jpg" alt="Man sitting on the dock, jutting across a lake in Germany.">
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quasi similique. Sed doloremque placeat architecto odio magni libero incidunt assumenda quibusdam laborum quo perferendis, alias, sit laboriosam ipsam dolorum eaque.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto minima rem quia, ipsum officiis culpa velit veritatis mollitia quaerat asperiores nobis eveniet. Nostrum quasi, ipsa ipsum numquam totam alias illum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error ullam veritatis laudantium quas inventore illo. Dignissimos veniam praesentium magnam maxime eius nam corporis quia ratione rerum, neque quo porro quae.</p>
-        </section>
-        </section>
-
+<!--2ND FEATURED PRODUCT-->
         <section class="sectionC">
-            <div class="text-container">
-                <h2>Quirky Joke Here...</h2>
-                <p>Repellendus, placeat? Nostrum dolore optio accusantium explicabo nihil, vero nesciunt cupiditate corrupti assumenda temporibus, beatae adipisci, rem aperiam quasi quam commodi dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sunt fugit cupiditate facere tempore dolorum fugiat nobis nisi deserunt consequatur! Placeat repellat pariatur, accusantium aliquam sint perferendis quidem magnam inventore.</p>
-                <br><br>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe temporibus maxime vero minus corporis ipsam perferendis, doloremque suscipit cum facilis ipsum dolor a perspiciatis fugit est reiciendis sed. In, fuga!</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus laudantium blanditiis quos. Provident incidunt omnis consequuntur similique voluptatum quod beatae ducimus corporis, quam natus, velit cumque, officiis modi eligendi.</p>
-            </div>
-            <div class="indent">
-                <img src="images/screenshot.png" alt="Screenshot of chat thread in #Web22."
+            <h2 class="feature">Share Your Story...</h2>
+
+            <div class="C-content">
+                <div class="text-container">
+
+                    <div>
+                    <p>We're passionate about our community of hundreds of thousands of expats all across the globe. Take advantage of our tight-knit network of hikers, chefs, skiiers, photographers, bikers, mountaineers, climbers...you name it! Find your new home, follow some of the trendiest, most-connected Expats near you, and chat with them to hear all that your new home has to offer.</p>
+                    </div>
+                    <br><br>
+                    <div>
+                    <p>We wouldn't be here without you and your fellow expats. Share all of your best stories with us...from your vacations, your hidden hole-in-the-wall bars, the best restaurants by the beach, deals and shopping steals, and whatever else we can learn from you!</p>
+                    </div>
+                    <br>
+                    <div>
+                    <p>What you'll find here - and nowhere else - is a thriving online community of some of the most interesting people in the world. They've seen it, done it, and lived to talk about it. Follow your fellow expats to stay updated on their travels, and publish your own stories and share those pics that you've been meaning to tell somebody about. We're all ears!
+                    </p>
+                    </div>
+
+                </div>
+                <div class="indent">
+                    <img src="images/screenshot.png" alt="Screenshot of chat thread in #Web22.">
+                </div>
             </div>
         </section>
+
+<!--ABOUT US TEAMPAGE-->
         <section class="sectionD">
+        <div>
             <h2 id="about">About Us</h2>
-            <div class="team-member">
+            <div class="center-card">
+
+                <div onscroll="startAnimate()" id="Left" class="team-member fadeInLeft animated">
+                        <img src="images/yusuf.png" alt="Avatar">
+                        <div class="container">
+                        <h4><b>Yusuf Abdulkarim</b></h4> 
+                        <h4>Web Back-End Engineer</h4> 
+                        </div>
+                </div>
+
+                <div class="team-member fadeInDown animated">
+                        <img src="images/kenya.jpg" alt="Avatar">
+                        <div class="container">
+                        <h4><b>Kenya Alston</b></h4> 
+                        <h4>Web Front-End Engineer</h4> 
+                       <!-- <p>A Full Stack Web Developer based in Chicago, IL.</p>  -->
+                        </div>
+                </div>
+
+                <div class="team-member fadeInRight animated">
+                        <img src="images/michael.png" alt="Avatar">
+                        <div class="container">
+                        <h4><b>Michael Chrupcala</b></h4> 
+                        <h4>Web User-Interface Engineer</h4> 
+                        </div>
+                </div>
+
+                <div class="team-member fadeInLeft animated">
+                        <img src="images/rosa.png" alt="Avatar">
+                        <div class="container">
+                        <h4><b>Rosa Perez</b></h4> 
+                        <h4>Web Front-End Engineer</h4> 
+                        </div>
+                </div>
+
+                <div class="team-member fadeInUp animated">
+                        <img src="images/blake.png" alt="Avatar">
+                        <div class="container">
+                        <h4><b>Blake Prouty</b></h4> 
+                        <h4>Web Front-End Engineer</h4> 
+                        </div>
+                </div>
+
+                <div class="team-member fadeInRight animated">
+                        <img src="images/heorhii.png" alt="Avatar">
+                        <div class="container">
+                        <h4><b>Heorhii Siburov</b></h4> 
+                        <h4>Web User-Interface Engineer</h4> 
+                        </div>
+                </div>
 
             </div>
+        </div>
         </section>
+    
+<!--CONTACT PAGE-->
         <section class="sectionE">
                 <h2 id="contact">Contact Us</h2>
+                <div>
+
+                    <form>
+
+                        <div class="form-field">
+                            First Name:
+                            <input  type="text" required></input>
+                        </div>
+                    
+                        <div class="form-field">
+                            Last Name:
+                            <input class="contact-form" type="text" required></input>
+                        </div>
+                    
+                        <div class="form-field">
+                            Please enter your email address:
+                            <input type="email" required></input>
+                        </div>
+
+                        <div class="form-field">
+                            <textarea  class="contact-form" maxlength="200" rows="25" cols="130" placeholder="Type here...">
+                            </textarea>
+                        </div>
+                    
+                        <input type="submit" value="Submit"></input>
+                    
+                    </form>
+
+                </div>
         </section>
     </main>
 
     <footer>
-        <div>
-        <p>Photo by Kelly Sikkema on Unsplash.</p>
+        <div class="attribution">
+            <p>Photo by Kelly Sikkema on Unsplash.</p>
+        </div>
+        <div class="favicons">
+                <img src="images/twitter-brands.svg">
+                <img src="images/facebook-brands.svg">
+                <img src="images/instagram-brands.svg">
         </div>
     </footer>
 </container>
 
 
+<!--JavaScript code for the polaroid photo carousel-->
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -142,7 +263,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }</script>
-
 
 </body>
 
